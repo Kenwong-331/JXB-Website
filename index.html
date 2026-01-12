@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JXB Fit Club | EMS Training Setia Alam</title>
+  <meta name="description" content="JXB Fit Club in Setia Alam — EMS training designed for busy people. 20-minute sessions, coached guidance, and personalized plans." />
+  <meta property="og:title" content="JXB Fit Club | EMS Training Setia Alam" />
+  <meta property="og:description" content="EMS training for busy schedules — short sessions, coached guidance, and personalized plans." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- LocalBusiness structured data (basic) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HealthClub",
+    "name":"JXB Fit Club",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"2-4, E Sekyen U13 2, Jalan Setia Prima A U13/A",
+      "addressLocality":"Shah Alam",
+      "postalCode":"40170",
+      "addressRegion":"Selangor",
+      "addressCountry":"MY"
+    },
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"00:00","closes":"00:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"09:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"17:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"14:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"00:00","closes":"00:00"}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">JXB Fit Club</a>
+
+      <nav class="links">
+        <a href="#ems" data-i18n="nav_ems">EMS</a>
+        <a href="#programs" data-i18n="nav_programs">Programs</a>
+        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+        <a href="#booking" data-i18n="nav_booking">Booking</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang" id="langBtn" aria-label="Switch language">中文</button>
+        <a class="btn btn-ghost" id="waTop" href="#" target="_blank" rel="noopener" data-i18n="cta_whatsapp">WhatsApp</a>
+        <a class="btn" href="#booking" data-i18n="cta_book">Book Trial</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill" data-i18n="hero_pill">Setia Alam • EMS Training</p>
+          <h1 data-i18n="hero_title">Train smarter in 20 minutes.</h1>
+          <p class="lead" data-i18n="hero_sub">
+            EMS sessions designed for busy schedules — short, coached, and personalized.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#booking" data-i18n="cta_book">Book Trial</a>
+            <a class="btn btn-ghost" id="waHero" href="#" target="_blank" rel="noopener" data-i18n="cta_whatsapp">WhatsApp</a>
+          </div>
+
+          <ul class="ticks">
+            <li data-i18n="hero_tick1">20-minute sessions</li>
+            <li data-i18n="hero_tick2">Coach-guided training</li>
+            <li data-i18n="hero_tick3">Personalized plan</li>
+          </ul>
+
+          <p class="note" data-i18n="hero_note">
+            *Results vary by individual. Consistency, nutrition, and recovery matter.
+          </p>
+        </div>
+
+        <div class="card hero-card">
+          <h3 data-i18n="hero_card_title">Quick Info</h3>
+          <div class="kv">
+            <div class="k" data-i18n="hero_card_addr_k">Address</div>
+            <div class="v">2-4, E Sekyen U13 2, Jalan Setia Prima A U13/A, Setia Alam, 40170 Shah Alam</div>
+            <div class="k" data-i18n="hero_card_hours_k">Hours</div>
+            <div class="v" id="hoursText"></div>
+          </div>
+          <div class="mini-cta">
+            <a class="btn btn-small" href="#contact" data-i18n="cta_directions">Get Directions</a>
+            <a class="btn btn-ghost btn-small" href="#booking" data-i18n="cta_inquiry">Pricing Inquiry</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMS -->
+    <section class="section" id="ems">
+      <div class="container">
+        <h2 data-i18n="ems_title">What is EMS?</h2>
+        <p class="muted" data-i18n="ems_desc">
+          EMS (Electrical Muscle Stimulation) helps activate muscles through controlled impulses while you perform guided movements.
+          It’s popular for time-efficient training — especially for busy people.
+        </p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3 data-i18n="ems_c1_t">Time-efficient</h3>
+            <p data-i18n="ems_c1_d">Short sessions built for busy schedules — commonly around 20 minutes.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="ems_c2_t">Coach-guided</h3>
+            <p data-i18n="ems_c2_d">Training is supervised for technique, safety, and progression.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="ems_c3_t">Personalized intensity</h3>
+            <p data-i18n="ems_c3_d">Intensity is adjusted to match your level and goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="section" id="programs">
+      <div class="container">
+        <h2 data-i18n="programs_title">Programs</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 data-i18n="p1_t">Fat loss & toning</h3>
+            <p data-i18n="p1_d">Structured sessions to support body composition goals (with nutrition guidance as needed).</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="p2_t">Strength & conditioning</h3>
+            <p data-i18n="p2_d">Progressive EMS training for strength, posture, and overall fitness.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="p3_t">Beginner-friendly</h3>
+            <p data-i18n="p3_d">Low barrier entry — coached, controlled, and adjusted per person.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="p4_t">Busy schedule plan</h3>
+            <p data-i18n="p4_d">20-minute sessions designed for people who can’t spend hours in the gym.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2 data-i18n="pricing_title">Pricing</h2>
+        <p class="muted" data-i18n="pricing_desc">
+          Pricing may vary by package and coaching plan. Contact us for the latest packages and trial availability.
+        </p>
+
+        <div class="grid3">
+          <div class="card price">
+            <h3 data-i18n="price1_t">Trial Session</h3>
+            <p class="muted" data-i18n="price1_d">Ideal for first-timers to understand EMS and your goals.</p>
+            <a class="btn btn-small" href="#booking" data-i18n="cta_book">Book Trial</a>
+          </div>
+
+          <div class="card price">
+            <h3 data-i18n="price2_t">Starter Package</h3>
+            <p class="muted" data-i18n="price2_d">For building consistency with weekly sessions.</p>
+            <a class="btn btn-ghost btn-small" href="#booking" data-i18n="cta_inquiry">Ask for Details</a>
+          </div>
+
+          <div class="card price">
+            <h3 data-i18n="price3_t">Coaching Plan</h3>
+            <p class="muted" data-i18n="price3_d">Personalized training + progression with a coach.</p>
+            <a class="btn btn-ghost btn-small" href="#booking" data-i18n="cta_inquiry">Ask for Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section" id="booking">
+      <div class="container">
+        <h2 data-i18n="booking_title">Booking</h2>
+        <p class="muted" data-i18n="booking_desc">
+          Fastest way: WhatsApp us. You can also use a simple booking form (Google Form) for trial requests.
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 data-i18n="booking_whatsapp_t">WhatsApp</h3>
+            <p data-i18n="booking_whatsapp_d">Tap the button and tell us your preferred date/time.</p>
+            <a class="btn" id="waBook" href="#" target="_blank" rel="noopener" data-i18n="cta_whatsapp">WhatsApp</a>
+            <p class="small muted" data-i18n="booking_tip">
+              Tip: Include your goal (fat loss/toning/strength) and your available time.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="booking_form_t">Booking Form</h3>
+            <p data-i18n="booking_form_d">
+              Replace this link with your Google Form once ready.
+            </p>
+            <a class="btn btn-ghost" id="formLink" href="#" target="_blank" rel="noopener" data-i18n="cta_open_form">Open Form</a>
+            <p class="small muted">Google Form URL: (to be added)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 data-i18n="contact_title">Contact</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 data-i18n="contact_addr_t">Address</h3>
+            <p>2-4, E Sekyen U13 2, Jalan Setia Prima A U13/A, Setia Alam, 40170 Shah Alam, Selangor</p>
+
+            <h3 data-i18n="contact_hours_t">Hours</h3>
+            <div class="hours" id="hoursList"></div>
+
+            <div class="mini-cta">
+              <a class="btn btn-small" id="dirBtn" href="#" target="_blank" rel="noopener" data-i18n="cta_directions">Get Directions</a>
+              <a class="btn btn-ghost btn-small" id="waContact" href="#" target="_blank" rel="noopener" data-i18n="cta_whatsapp">WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="contact_map_t">Map</h3>
+            <div class="map">
+              <!-- Simple Google Maps embed (replace if you have the official embed link) -->
+              <iframe
+                title="JXB Fit Club Map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=JXB%20Fit%20Club%20Setia%20Alam&output=embed">
+              </iframe>
+            </div>
+
+            <p class="small muted" data-i18n="contact_social_tip">
+              Add Instagram/Facebook links here when available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="small muted">© <span id="year"></span> JXB Fit Club. <span data-i18n="footer_note">All rights reserved.</span></p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
