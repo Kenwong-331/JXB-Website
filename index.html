@@ -1,5 +1,6 @@
 <!doctype html>
-document.documentElement.lang = (lang === "en") ? "en" : "zh";<head>
+<html lang="en">
+  <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>JXB Fit Club | EMS Training Setia Alam</title>
@@ -40,7 +41,10 @@ document.documentElement.lang = (lang === "en") ? "en" : "zh";<head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">JXB Fit Club</a>
+      <a class="brand" href="#top">
+        <img src="assets/img/Logo.jpg" alt="JXB Fit Club Logo" class="brand-logo">
+        <span>JXB Fit Club</span>
+      </a>
 
       <nav class="links">
         <a href="#ems" data-i18n="nav_ems">EMS</a>
@@ -94,7 +98,7 @@ document.documentElement.lang = (lang === "en") ? "en" : "zh";<head>
             <div class="v" id="hoursText"></div>
           </div>
           <div class="mini-cta">
-            <a class="btn btn-small" href="#contact" data-i18n="cta_directions">Get Directions</a>
+            <a class="btn btn-small" id="dirHero" href="#" target="_blank" rel="noopener" data-i18n="cta_directions">Get Directions</a>
             <a class="btn btn-ghost btn-small" href="#booking" data-i18n="cta_inquiry">Pricing Inquiry</a>
           </div>
         </div>
@@ -243,8 +247,18 @@ document.documentElement.lang = (lang === "en") ? "en" : "zh";<head>
               </iframe>
             </div>
 
+            <div class="social-links">
+              <a class="btn btn-ghost btn-small" href="https://www.instagram.com/jxb_fitclub/" target="_blank" rel="noopener">
+                Instagram
+              </a>
+              <a class="btn btn-ghost btn-small" href="https://web.facebook.com/profile.php?id=61578638810207" target="_blank" rel="noopener">
+                Facebook
+              </a>
+            </div>
+
             <p class="small muted" data-i18n="contact_social_tip">
-              Add Instagram/Facebook links here when available.
+              Follow us on Instagram and Facebook for updates and trial class info.
+            </p>
             </p>
           </div>
         </div>

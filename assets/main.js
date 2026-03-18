@@ -91,6 +91,7 @@ const I18N = {
 let lang = "en";
 
 function setText() {
+  document.documentElement.lang = (lang === "en") ? "en" : "zh";
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     el.textContent = I18N[lang][key] ?? el.textContent;
@@ -146,7 +147,12 @@ function buildWhatsAppLink(){
 function buildDirections(){
   const q = encodeURIComponent("JXB Fit Club Setia Alam");
   const url = `https://www.google.com/maps/search/?api=1&query=${q}`;
-  document.getElementById("dirBtn").href = url;
+
+  const dirBtn = document.getElementById("dirBtn");
+  if (dirBtn) dirBtn.href = url;
+
+  const dirHero = document.getElementById("dirHero");
+  if (dirHero) dirHero.href = url;
 }
 
 function buildFormLink(){
