@@ -82,7 +82,6 @@ const I18N = {
     cta_open_form:"通过表单预约",
     contact_title:"联系",
     contact_addr_t:"地址", contact_hours_t:"营业时间", contact_map_t:"地图",
-    contact_social_tip:"之后可在这里加入 Instagram/Facebook 链接。",
     footer_note:"版权所有。"
   }
 };
