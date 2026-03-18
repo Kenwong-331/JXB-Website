@@ -47,7 +47,6 @@ const I18N = {
     cta_open_form:"Book via Form",
     contact_title:"Contact",
     contact_addr_t:"Address", contact_hours_t:"Hours", contact_map_t:"Map",
-    contact_social_tip:"Add Instagram/Facebook links here when available.",
     footer_note:"All rights reserved."
   },
   zh: {
