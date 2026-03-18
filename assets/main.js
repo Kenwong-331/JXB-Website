@@ -1,6 +1,6 @@
 // ====== CONFIG (edit these later) ======
-const WHATSAPP_NUMBER = ""; // e.g. "60123456789" (tanpa +)
-const GOOGLE_FORM_URL = ""; // paste Google Form link bila siap
+const WHATSAPP_NUMBER = "60169687232";
+const GOOGLE_FORM_URL = "https://forms.gle/DRx6Xe3i98VodQKK8";
 
 const addressText = "2-4, E Sekyen U13 2, Jalan Setia Prima A U13/A, Setia Alam, 40170 Shah Alam, Selangor";
 const hours = [
@@ -43,8 +43,8 @@ const I18N = {
     booking_desc:"Fastest way: WhatsApp us. You can also use a simple booking form (Google Form) for trial requests.",
     booking_whatsapp_t:"WhatsApp", booking_whatsapp_d:"Tap the button and tell us your preferred date/time.",
     booking_tip:"Tip: Include your goal (fat loss/toning/strength) and your available time.",
-    booking_form_t:"Booking Form", booking_form_d:"Replace this link with your Google Form once ready.",
-    cta_open_form:"Open Form",
+    booking_form_t:"Book via Form", booking_form_d:"Complete the form and we will contact you to confirm your session.",
+    cta_open_form:"Book via Form",
     contact_title:"Contact",
     contact_addr_t:"Address", contact_hours_t:"Hours", contact_map_t:"Map",
     contact_social_tip:"Add Instagram/Facebook links here when available.",
@@ -78,8 +78,8 @@ const I18N = {
     booking_desc:"最快方式：WhatsApp 联系我们。也可使用简单表单（Google Form）提交体验课预约。",
     booking_whatsapp_t:"WhatsApp", booking_whatsapp_d:"点击按钮，告诉我们你的日期/时间偏好。",
     booking_tip:"小贴士：写上目标（减脂/塑形/力量）与可训练时间段。",
-    booking_form_t:"预约表单", booking_form_d:"准备好 Google Form 后，把链接替换到这里。",
-    cta_open_form:"打开表单",
+    booking_form_t:"通过表单预约", booking_form_d:"填写表单后，我们会联系您确认预约时间。",
+    cta_open_form:"通过表单预约",
     contact_title:"联系",
     contact_addr_t:"地址", contact_hours_t:"营业时间", contact_map_t:"地图",
     contact_social_tip:"之后可在这里加入 Instagram/Facebook 链接。",
@@ -121,8 +121,8 @@ function renderHours(){
 
 function buildWhatsAppLink(){
   // Safe fallback: if number not set, disable links
-  const msgEN = encodeURIComponent("Hi JXB Fit Club, I would like to book a trial EMS session. My preferred date/time is: ");
-  const msgZH = encodeURIComponent("你好，我想预约 JXB Fit Club 的 EMS 体验课。我的时间是：");
+  const msgEN = encodeURIComponent("Hi JXB Fit Club, I would like to book a trial EMS session.\nMy preferred date/time:\nMy goal:");
+  const msgZH = encodeURIComponent("你好，我想预约 JXB Fit Club 的 EMS 体验课。\n我的时间：\n我的目标：");
 
   if(!WHATSAPP_NUMBER){
     // disable
