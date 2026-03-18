@@ -101,24 +101,39 @@ function setText() {
 }
 
 function renderHours(){
-  const hoursText = hours
-    .map(h => `${(lang==="en"?h.dayEN:h.dayCN)}: ${(lang==="en"?h.timeEN:h.timeCN)}`)
-    .join(" • ");
-  document.getElementById("hoursText").textContent = hoursText;
+  const hoursTextEl = document.getElementById("hoursText");
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    hoursTextEl.textContent = (lang === "en")
+      ? "See full hours below"
+      : "完整营业时间请看下方";
+  } else {
+    const hoursText = hours
+      .map(h => `${(lang==="en"?h.dayEN:h.dayCN)}: ${(lang==="en"?h.timeEN:h.timeCN)}`)
+      .join(" • ");
+    hoursTextEl.textContent = hoursText;
+  }
 
   const list = document.getElementById("hoursList");
   list.innerHTML = "";
   hours.forEach(h=>{
     const row = document.createElement("div");
     row.className = "row";
+
     const d = document.createElement("span");
     d.textContent = (lang==="en"?h.dayEN:h.dayCN);
+
     const t = document.createElement("span");
     t.textContent = (lang==="en"?h.timeEN:h.timeCN);
-    row.appendChild(d); row.appendChild(t);
+
+    row.appendChild(d);
+    row.appendChild(t);
     list.appendChild(row);
   });
 }
+
+window.addEventListener("resize", renderHours);
 
 function buildWhatsAppLink(){
   // Safe fallback: if number not set, disable links
