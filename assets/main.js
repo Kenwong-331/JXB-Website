@@ -142,7 +142,7 @@ function buildWhatsAppLink(){
 
   if(!WHATSAPP_NUMBER){
     // disable
-    ["waTop","waHero","waBook","waContact"].forEach(id=>{
+    ["waTop","waHero","waBook","waContact","waFloat"].forEach(id=>{
       const a = document.getElementById(id);
       if(!a) return;
       a.href = "#booking";
@@ -153,7 +153,7 @@ function buildWhatsAppLink(){
 
   const msg = (lang==="en") ? msgEN : msgZH;
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
-  ["waTop","waHero","waBook","waContact"].forEach(id=>{
+  ["waTop","waHero","waBook","waContact","waFloat"].forEach(id=>{
     const a = document.getElementById(id);
     if(a) a.href = url;
   });
