@@ -270,9 +270,7 @@ if(menuToggle && navLinks){
   menuToggle.addEventListener("click", ()=>{
     navLinks.classList.toggle("show");
   });
-}
 
-if(menuToggle && navLinks){
   document.querySelectorAll(".links a").forEach(link=>{
     link.addEventListener("click", ()=>{
       navLinks.classList.remove("show");
