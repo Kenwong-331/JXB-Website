@@ -367,7 +367,6 @@ h2{font-size:28px;margin:0 0 14px}
     border-radius:50%;
     padding:0;
     right:12px;
-    bottom:calc(100px + env(safe-area-inset-bottom));
     font-size:14px;
   }
 
@@ -393,6 +392,11 @@ h2{font-size:28px;margin:0 0 14px}
   .sticky-cta .btn{
     width:100%;
     min-height:44px;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+
+  .sticky-cta .btn-ghost{
+    opacity:0.85;
   }
 
   body{
