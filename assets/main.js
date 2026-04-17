@@ -153,8 +153,27 @@ window.addEventListener("resize", renderHours);
 
 function buildWhatsAppLink(){
   // Safe fallback: if number not set, disable links
-  const msgEN = encodeURIComponent("Hi JXB Fit Club, I would like to book a trial EMS session.\nMy preferred date/time:\nMy goal:");
-  const msgZH = encodeURIComponent("你好，我想预约 JXB Fit Club 的 EMS 体验课。\n我的时间：\n我的目标：");
+  const msgEN = encodeURIComponent(
+    `Hi JXB Fit Club, I would like to book a trial EMS session.
+
+    Name:
+    Preferred date/time:
+    Goal (fat loss / toning / strength):
+    First time trying EMS? (Yes/No):
+
+    Thank you!`
+    );
+
+  const msgZH = encodeURIComponent(
+    `你好，我想预约 JXB Fit Club 的 EMS 体验课。
+
+    姓名：
+    方便时间：
+    目标（减脂 / 塑形 / 增肌）：
+    是否第一次体验 EMS？（是/否）
+
+    谢谢！`
+    );
 
   if(!WHATSAPP_NUMBER){
     // disable
