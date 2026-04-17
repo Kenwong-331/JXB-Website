@@ -17,7 +17,7 @@ const hours = [
 const I18N = {
   en: {
     nav_ems:"EMS", nav_programs:"Programs", nav_pricing:"Pricing", nav_booking:"Booking", nav_contact:"Contact",
-    cta_whatsapp:"WhatsApp Now", cta_book:"Book Free Trial", cta_directions:"Get Directions", cta_inquiry:"WhatsApp 咨询",
+    cta_whatsapp:"WhatsApp Now", cta_book:"Book Free Trial", cta_directions:"Get Directions", cta_inquiry:"WhatsApp Inquiry",
     hero_pill:"Setia Alam • EMS Training",
     hero_title:"Get 2 hours of workout results in just 20 minutes.",
     hero_sub:"Designed for busy professionals who want real results — guided EMS training, personalized intensity, no wasted time.",
