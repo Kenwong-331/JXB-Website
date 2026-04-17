@@ -150,10 +150,26 @@ h2{font-size:28px;margin:0 0 14px}
     height:34px;
   }
 
-  /* 手机上先隐藏主导航，避免爆版 */
+@media (max-width: 768px){
   .links{
     display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:rgba(11,15,20,.95);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    padding:12px;
+    gap:10px;
+    z-index:40;
   }
+
+  .links.show{
+    display:flex;
+  }
+}
 
   .nav-actions{
     margin-left:auto;

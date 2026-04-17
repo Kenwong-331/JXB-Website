@@ -174,30 +174,30 @@ window.addEventListener("resize", renderHours);
 function buildWhatsAppLink(){
   // Safe fallback: if number not set, disable links
   const msgEN = encodeURIComponent(
-      `Hi JXB Fit Club 👋
+`Hi JXB Fit Club 👋
 
-      I’m interested in trying EMS training.
+I’m interested in trying EMS training.
 
-      Name:
-      Preferred date/time (e.g. weekday evening / weekend):
-      Goal (fat loss / toning / strength):
-      First time trying EMS? (Yes/No):
+Name:
+Preferred date/time (e.g. weekday evening / weekend):
+Goal (fat loss / toning / strength):
+First time trying EMS? (Yes/No):
 
-      Looking forward to your reply, thanks!`
-    );
+Looking forward to your reply, thanks!`
+);
 
   const msgZH = encodeURIComponent(
-      `你好 👋
+`你好 👋
 
-      我想了解 JXB Fit Club 的 EMS 体验课。
+我想了解 JXB Fit Club 的 EMS 体验课。
 
-      姓名：
-      方便时间（例如：平日晚上 / 周末）：
-      目标（减脂 / 塑形 / 增肌）：
-      是否第一次体验 EMS？（是/否）：
+姓名：
+方便时间（例如：平日晚上 / 周末）：
+目标（减脂 / 塑形 / 增肌）：
+是否第一次体验 EMS？（是/否）：
 
-      谢谢，期待你的回复！`
-    );
+谢谢，期待你的回复！`
+);
 
   if(!WHATSAPP_NUMBER){
     // disable
@@ -271,6 +271,18 @@ if(menuToggle && navLinks){
     navLinks.classList.toggle("show");
   });
 }
+
+document.querySelectorAll(".links a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    navLinks.classList.remove("show");
+  });
+});
+
+document.addEventListener("click", (e)=>{
+  if(!navLinks.contains(e.target) && !menuToggle.contains(e.target)){
+    navLinks.classList.remove("show");
+  }
+});
 
 // init
 setText();
