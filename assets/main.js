@@ -180,21 +180,22 @@ function buildFormLink(){
   a.href = GOOGLE_FORM_URL;
 }
 
-function toggleFloatingWhatsApp() {
+function initFloatingWhatsApp() {
   const hero = document.querySelector(".hero");
   const waFloat = document.getElementById("waFloat");
   if (!hero || !waFloat) return;
 
-  const rect = hero.getBoundingClientRect();
-  const passedHero = rect.bottom < 0;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      waFloat.classList.toggle("show", !entry.isIntersecting);
+    },
+    {
+      threshold: 0.05
+    }
+  );
 
-  waFloat.classList.toggle("show", passedHero);
+  observer.observe(hero);
 }
-
-window.addEventListener("scroll", toggleFloatingWhatsApp);
-window.addEventListener("resize", toggleFloatingWhatsApp);
-toggleFloatingWhatsApp();
-
 document.getElementById("year").textContent = new Date().getFullYear();
 
 document.getElementById("langBtn").addEventListener("click", ()=>{
@@ -208,3 +209,4 @@ setText();
 buildWhatsAppLink();
 buildDirections();
 buildFormLink();
+initFloatingWhatsApp();
