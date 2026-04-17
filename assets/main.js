@@ -180,6 +180,21 @@ function buildFormLink(){
   a.href = GOOGLE_FORM_URL;
 }
 
+function toggleFloatingWhatsApp() {
+  const hero = document.querySelector(".hero");
+  const waFloat = document.getElementById("waFloat");
+  if (!hero || !waFloat) return;
+
+  const heroBottom = hero.offsetTop + hero.offsetHeight;
+  const passedHero = window.scrollY > heroBottom - 120;
+
+  waFloat.classList.toggle("show", passedHero);
+}
+
+window.addEventListener("scroll", toggleFloatingWhatsApp);
+window.addEventListener("resize", toggleFloatingWhatsApp);
+toggleFloatingWhatsApp();
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 document.getElementById("langBtn").addEventListener("click", ()=>{
