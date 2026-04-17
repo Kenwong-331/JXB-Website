@@ -221,6 +221,10 @@ h2{font-size:28px;margin:0 0 14px}
   color:var(--text);
 }
 
+.sticky-cta{
+  display:none;
+}
+
 @media (max-width: 768px){
   .container{
     width:min(100%, 92%);
@@ -369,5 +373,33 @@ h2{font-size:28px;margin:0 0 14px}
 
   .testimonial .quote{
     font-size:15px;
+  }
+
+  .sticky-cta{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:130;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(11,15,20,.95);
+    backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);
+  }
+
+  .sticky-cta .btn{
+    width:100%;
+    min-height:44px;
+  }
+
+  body{
+    padding-bottom:84px;
+  }
+
+  .wa-float{
+    bottom:calc(160px + env(safe-area-inset-bottom));
   }
 }
