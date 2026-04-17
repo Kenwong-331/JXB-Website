@@ -150,27 +150,6 @@ h2{font-size:28px;margin:0 0 14px}
     height:34px;
   }
 
-@media (max-width: 768px){
-  .links{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    background:rgba(11,15,20,.95);
-    backdrop-filter: blur(10px);
-    border-bottom:1px solid var(--line);
-    flex-direction:column;
-    padding:12px;
-    gap:10px;
-    z-index:40;
-  }
-
-  .links.show{
-    display:flex;
-  }
-}
-
   .nav-actions{
     margin-left:auto;
     gap:8px;
@@ -369,20 +348,163 @@ h2{font-size:28px;margin:0 0 14px}
 }
 
 /* mobile */
+.menu-toggle{
+  display:none;
+  font-size:20px;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+  color:var(--text);
+}
+
 @media (max-width: 768px){
+  .container{
+    width:min(100%, 92%);
+  }
+
+  .nav{
+    position:sticky;
+    top:0;
+  }
+
+  .nav-inner{
+    position:relative;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:10px 0;
+  }
+
+  .brand span{
+    font-size:15px;
+  }
+
+  .brand-logo{
+    width:34px;
+    height:34px;
+  }
+
   .menu-toggle{
     display:block;
   }
 
   .links{
     display:none;
+    position:absolute;
+    top:100%;
+    left:0;
     width:100%;
+    background:rgba(11,15,20,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
     flex-direction:column;
-    gap:8px;
-    margin-top:10px;
+    padding:12px;
+    gap:10px;
+    z-index:40;
   }
 
   .links.show{
     display:flex;
+  }
+
+  .nav-actions{
+    margin-left:auto;
+    gap:8px;
+    flex-wrap:wrap;
+  }
+
+  .lang,
+  .btn,
+  .btn-ghost{
+    padding:9px 12px;
+    border-radius:12px;
+    font-size:14px;
+  }
+
+  h1{
+    font-size:30px;
+    line-height:1.12;
+  }
+
+  h2{
+    font-size:24px;
+  }
+
+  .lead{
+    font-size:15px;
+  }
+
+  .hero{
+    padding:32px 0 12px;
+  }
+
+  .hero-grid{
+    gap:14px;
+  }
+
+  .card{
+    padding:14px;
+    border-radius:16px;
+  }
+
+  .kv{
+    grid-template-columns:1fr;
+    gap:6px;
+  }
+
+  .k{
+    font-size:12px;
+  }
+
+  .v{
+    font-size:14px;
+  }
+
+  .cta-row,
+  .mini-cta,
+  .social-links{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .cta-row .btn,
+  .mini-cta .btn,
+  .social-links .btn,
+  #booking .btn{
+    width:100%;
+  }
+
+  .ticks li{
+    font-size:14px;
+  }
+
+  .hours .row{
+    padding:10px;
+    font-size:14px;
+  }
+
+  .map iframe{
+    height:220px;
+    border-radius:12px;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+    gap:8px;
+    align-items:flex-start;
+  }
+
+  .wa-float{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    padding:0;
+    right:12px;
+    bottom:calc(100px + env(safe-area-inset-bottom));
+    font-size:14px;
+  }
+
+  .testimonial .quote{
+    font-size:15px;
   }
 }
