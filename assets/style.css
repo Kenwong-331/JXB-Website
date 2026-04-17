@@ -341,3 +341,32 @@ h2{font-size:28px;margin:0 0 14px}
   margin-top:0;
   margin-bottom:10px;
 }
+
+.menu-toggle{
+  display:none;
+  font-size:20px;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+  color:var(--text);
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .menu-toggle{
+    display:block;
+  }
+
+  .links{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:8px;
+    margin-top:10px;
+  }
+
+  .links.show{
+    display:flex;
+  }
+}

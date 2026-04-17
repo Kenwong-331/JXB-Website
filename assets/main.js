@@ -174,25 +174,29 @@ window.addEventListener("resize", renderHours);
 function buildWhatsAppLink(){
   // Safe fallback: if number not set, disable links
   const msgEN = encodeURIComponent(
-    `Hi JXB Fit Club, I would like to book a trial EMS session.
+      `Hi JXB Fit Club 👋
 
-    Name:
-    Preferred date/time:
-    Goal (fat loss / toning / strength):
-    First time trying EMS? (Yes/No):
+      I’m interested in trying EMS training.
 
-    Thank you!`
+      Name:
+      Preferred date/time (e.g. weekday evening / weekend):
+      Goal (fat loss / toning / strength):
+      First time trying EMS? (Yes/No):
+
+      Looking forward to your reply, thanks!`
     );
 
   const msgZH = encodeURIComponent(
-    `你好，我想预约 JXB Fit Club 的 EMS 体验课。
+      `你好 👋
 
-    姓名：
-    方便时间：
-    目标（减脂 / 塑形 / 增肌）：
-    是否第一次体验 EMS？（是/否）
+      我想了解 JXB Fit Club 的 EMS 体验课。
 
-    谢谢！`
+      姓名：
+      方便时间（例如：平日晚上 / 周末）：
+      目标（减脂 / 塑形 / 增肌）：
+      是否第一次体验 EMS？（是/否）：
+
+      谢谢，期待你的回复！`
     );
 
   if(!WHATSAPP_NUMBER){
@@ -258,6 +262,15 @@ document.getElementById("langBtn").addEventListener("click", ()=>{
   setText();
   buildWhatsAppLink();
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".links");
+
+if(menuToggle && navLinks){
+  menuToggle.addEventListener("click", ()=>{
+    navLinks.classList.toggle("show");
+  });
+}
 
 // init
 setText();
