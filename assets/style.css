@@ -336,3 +336,8 @@ h2{font-size:28px;margin:0 0 14px}
     font-size:15px;
   }
 }
+
+.faq-item h3{
+  margin-top:0;
+  margin-bottom:10px;
+}
