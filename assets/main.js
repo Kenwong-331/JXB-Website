@@ -17,7 +17,7 @@ const hours = [
 const I18N = {
   en: {
     nav_ems:"EMS", nav_programs:"Programs", nav_pricing:"Pricing", nav_booking:"Booking", nav_contact:"Contact",
-    cta_whatsapp:"WhatsApp Now", cta_book:"Book Free Trial", cta_directions:"Get Directions", cta_inquiry:"WhatsApp Inquiry",
+    cta_whatsapp:"Chat on WhatsApp", cta_book:"Book Free Trial", cta_directions:"Get Directions", cta_inquiry:"WhatsApp Inquiry",
     hero_pill:"Setia Alam • EMS Training",
     hero_title:"Get 2 hours of workout results in just 20 minutes.",
     hero_sub:"Designed for busy professionals who want real results — guided EMS training, personalized intensity, no wasted time.",
@@ -70,7 +70,7 @@ const I18N = {
   },
   zh: {
     nav_ems:"EMS 训练", nav_programs:"课程方案", nav_pricing:"价格", nav_booking:"预约", nav_contact:"联系",
-    cta_whatsapp:"WhatsApp 立即咨询", cta_book:"预约免费体验", cta_directions:"导航到店", cta_inquiry:"WhatsApp 咨询",
+    cta_whatsapp:"WhatsApp 咨询", cta_book:"预约免费体验", cta_directions:"导航到店", cta_inquiry:"WhatsApp 咨询",
     hero_pill:"Setia Alam • EMS 训练",
     hero_title:"20 分钟，达到传统训练 2 小时效果。",
     hero_sub:"专为忙碌人士设计的 EMS 训练——教练带练、强度可调、省时高效。",
@@ -119,7 +119,7 @@ const I18N = {
     cta_open_form:"通过表单预约",
     contact_title:"联系",
     contact_addr_t:"地址", contact_hours_t:"营业时间", contact_map_t:"地图",
-    footer_note:"版权所有。"
+    footer_note:"版权所有 © JXB Fit Club"
   }
 };
 
@@ -176,27 +176,27 @@ function buildWhatsAppLink(){
   const msgEN = encodeURIComponent(
 `Hi JXB Fit Club 👋
 
-I’m interested in trying EMS training.
+I’d like to book a trial EMS session.
 
 Name:
-Preferred date/time (e.g. weekday evening / weekend):
-Goal (fat loss / toning / strength):
+Preferred day/time:
+Fitness goal (fat loss / toning / strength):
 First time trying EMS? (Yes/No):
 
-Looking forward to your reply, thanks!`
+Thank you, looking forward to your reply.`
 );
 
   const msgZH = encodeURIComponent(
 `你好 👋
 
-我想了解 JXB Fit Club 的 EMS 体验课。
+我想预约 JXB Fit Club 的 EMS 体验课。
 
 姓名：
-方便时间（例如：平日晚上 / 周末）：
-目标（减脂 / 塑形 / 增肌）：
+方便的时间（例如：平日晚上 / 周末）：
+训练目标（减脂 / 塑形 / 增肌）：
 是否第一次体验 EMS？（是/否）：
 
-谢谢，期待你的回复！`
+谢谢，期待你的回复。`
 );
 
   if(!WHATSAPP_NUMBER){
