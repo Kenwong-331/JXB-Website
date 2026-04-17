@@ -20,7 +20,7 @@ const I18N = {
     cta_whatsapp:"WhatsApp Now", cta_book:"Book Free Trial", cta_directions:"Get Directions", cta_inquiry:"Pricing Inquiry",
     hero_pill:"Setia Alam • EMS Training",
     hero_title:"Get 2 hours of workout results in just 20 minutes.",
-    hero_sub:"EMS sessions designed for busy schedules — short, coached, and personalized.",
+    hero_sub:"Designed for busy professionals who want real results — guided EMS training, personalized intensity, no wasted time.",
     hero_tick1:"Perfect for busy schedules", hero_tick2:"Beginner-friendly with coach guidance", hero_tick3:"Personalized training for faster results",
     hero_note:"*Results vary by individual. Consistency, nutrition, and recovery matter.",
     hero_note2:"First time trying EMS? No experience needed — our coach will guide you step by step.",
