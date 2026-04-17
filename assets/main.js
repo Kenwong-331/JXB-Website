@@ -185,8 +185,8 @@ function toggleFloatingWhatsApp() {
   const waFloat = document.getElementById("waFloat");
   if (!hero || !waFloat) return;
 
-  const heroBottom = hero.offsetTop + hero.offsetHeight;
-  const passedHero = window.scrollY > heroBottom - 120;
+  const rect = hero.getBoundingClientRect();
+  const passedHero = rect.bottom < 0;
 
   waFloat.classList.toggle("show", passedHero);
 }
