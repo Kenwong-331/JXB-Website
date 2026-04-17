@@ -406,4 +406,13 @@ h2{font-size:28px;margin:0 0 14px}
   .wa-float{
     bottom:calc(160px + env(safe-area-inset-bottom));
   }
+
+  .nav-actions #waTop,
+  .nav-actions .btn[href="#booking"]{
+    display:none;
+  }
+
+  .wa-float{
+  display:none;
+  }
 }
