@@ -285,7 +285,8 @@ h2{font-size:28px;margin:0 0 14px}
   border-radius: 999px;
   background: linear-gradient(90deg,var(--accent),var(--accent2));
   color: #06101c;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 1px;
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 12px 28px rgba(0,0,0,.28);
   white-space: nowrap;
@@ -307,28 +308,10 @@ h2{font-size:28px;margin:0 0 14px}
   filter: brightness(1.05);
 }
 
-.wa-float img{
-  width: 26px;
-  height: 26px;
-  max-width: 100%;
-  object-fit: contain;
-}
-
 @media (max-width: 768px){
   .wa-float{
     right: 12px;
     bottom: calc(100px + env(safe-area-inset-bottom));
-    width: 58px;
-    height: 58px;
-    padding: 0;
-    border-radius: 50%;
-    font-size: 16px;
-    overflow: hidden;
-  }
-  .wa-float img{
-    width: 26px;
-    height: 26px;
-    max-width: 100%;
-    object-fit: contain;
+    font-size: 14px;
   }
 }
