@@ -210,6 +210,16 @@ h2{font-size:28px;margin:0 0 14px}
   margin-bottom:10px;
 }
 
+.trust-line{
+  margin-top:8px;
+}
+
+#why .card h3,
+#process .card h3{
+  margin-top:0;
+  margin-bottom:10px;
+}
+
 /* mobile */
 .menu-toggle{
   display:none;
@@ -414,5 +424,9 @@ h2{font-size:28px;margin:0 0 14px}
 
   .wa-float{
   display:none;
+  }
+
+  .trust-line{
+    font-size:13px;
   }
 }
