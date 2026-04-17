@@ -1,5 +1,5 @@
 // ====== CONFIG (edit these later) ======
-const WHATSAPP_NUMBER = "601153655808";
+const WHATSAPP_NUMBER = "601159655808";
 const GOOGLE_FORM_URL = "https://forms.gle/DRx6Xe3i98VodQKK8";
 
 const addressText = "2-4, E Sekyen U13 2, Jalan Setia Prima A U13/A, Setia Alam, 40170 Shah Alam, Selangor";
