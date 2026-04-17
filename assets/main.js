@@ -82,6 +82,7 @@ const I18N = {
     booking_form_t:"Book via Form", booking_form_d:"Complete the form and we will contact you to confirm your session.",
     cta_open_form:"Book via Form",
     contact_title:"Contact",
+    contact_social_tip:"Follow us on Instagram and Facebook for updates and trial class info.",
     contact_addr_t:"Address", contact_hours_t:"Hours", contact_map_t:"Map",
     footer_note:"All rights reserved."
   },
@@ -152,6 +153,7 @@ const I18N = {
     booking_form_t:"通过表单预约", booking_form_d:"填写表单后，我们会联系您确认时间并安排体验课程。",
     cta_open_form:"通过表单预约",
     contact_title:"联系",
+    contact_social_tip:"关注我们的 Instagram 和 Facebook，获取最新动态和体验课信息。",
     contact_addr_t:"地址", contact_hours_t:"营业时间", contact_map_t:"地图",
     footer_note:"版权所有 © JXB Fit Club"
   }
@@ -268,6 +270,10 @@ function buildFormLink(){
   if(!GOOGLE_FORM_URL){
     a.href = "#booking";
     a.title = "Add Google Form link in assets/main.js";
+    a.textContent = (lang === "en")
+      ? "Use WhatsApp instead"
+      : "请通过 WhatsApp 联系";
+
     return;
   }
   a.href = GOOGLE_FORM_URL;
