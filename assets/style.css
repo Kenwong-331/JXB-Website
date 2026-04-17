@@ -306,14 +306,23 @@ h2{font-size:28px;margin:0 0 14px}
   filter: brightness(1.05);
 }
 
+.wa-float img{
+  width: 26px;
+  height: 26px;
+}
+
 @media (max-width: 768px){
   .wa-float{
     right: 12px;
-    bottom: 88px;
+    bottom: calc(100px + env(safe-area-inset-bottom));
     width: 58px;
     height: 58px;
     padding: 0;
     border-radius: 50%;
     font-size: 16px;
+  }
+  .wa-float img{
+    width: 24px;
+    height: 24px;
   }
 }
