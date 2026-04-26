@@ -114,7 +114,7 @@ const I18N = {
     why3_t:"新手也适合",
     why3_d:"无需经验，我们会根据你的状态调整强度和节奏。",
     studio_pill:"JXB 训练空间",
-    studio_title:"位于Setia Alam的私人EMS训练工作室——专为在教练指导下进行高效的20分钟训练课程而设计。",
+    studio_title:"位于 Setia Alam 的私人 EMS 训练空间，专为 20 分钟高效训练而设计。",
     studio_desc:"我们的 EMS 训练空间适合 20 分钟高效训练，由教练指导，并搭配镜面反馈与整洁的训练环境。",
     programs_title:"课程方案",
     p1_t:"减脂塑形", p1_d:"以体态与体脂管理为目标（必要时可配合饮食建议）。",
