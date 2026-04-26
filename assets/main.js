@@ -237,7 +237,7 @@ Thank you, looking forward to your reply.`
 
   if(!WHATSAPP_NUMBER){
     // disable
-    ["waTop","waHero","waBook","waContact","waFloat","waSticky"].forEach(id=>{
+    ["waTop","waHero","waBook","waContact","waFloat","waSticky","waStudio"].forEach(id=>{
       const a = document.getElementById(id);
       if(!a) return;
       a.href = "#booking";
@@ -248,7 +248,7 @@ Thank you, looking forward to your reply.`
 
   const msg = (lang==="en") ? msgEN : msgZH;
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
-  ["waTop","waHero","waBook","waContact","waFloat","waSticky"].forEach(id=>{
+  ["waTop","waHero","waBook","waContact","waFloat","waSticky","waStudio"].forEach(id=>{
     const a = document.getElementById(id);
     if(a) a.href = url;
   });
